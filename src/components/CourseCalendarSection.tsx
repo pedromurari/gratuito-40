@@ -2,15 +2,15 @@ import React from "react";
 
 const DAY_NAMES = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SÁB"];
 
-// Junho 2026: começa na segunda-feira (índice 1)
-const JUNE_2026 = {
-  month: "Junho",
+// Julho 2026: começa na quarta-feira (índice 3)
+const JULY_2026 = {
+  month: "Julho",
   year: 2026,
-  firstDayOfWeek: 1,
-  totalDays: 30,
+  firstDayOfWeek: 3,
+  totalDays: 31,
 };
 
-const COURSE_DAYS = new Set([30]);
+const COURSE_DAYS = new Set([21, 22, 23]);
 
 const CalendarDay: React.FC<{ day: number | string; isHeader?: boolean; isCourseDay?: boolean }> = ({
   day,
@@ -34,7 +34,7 @@ const CalendarDay: React.FC<{ day: number | string; isHeader?: boolean; isCourse
 };
 
 const CourseCalendarSection = () => {
-  const { month, year, firstDayOfWeek, totalDays } = JUNE_2026;
+  const { month, year, firstDayOfWeek, totalDays } = JULY_2026;
 
   const calendarCells: React.ReactNode[] = [
     ...DAY_NAMES.map((day) => (
@@ -91,9 +91,9 @@ const CourseCalendarSection = () => {
               Datas das aulas
             </p>
             {[
-              { dia: "30", mes: "Junho", diaSemana: "Terça-feira", aula: "Aula 01" },
-              { dia: "01", mes: "Julho", diaSemana: "Quarta-feira", aula: "Aula 02" },
-              { dia: "02", mes: "Julho", diaSemana: "Quinta-feira", aula: "Aula 03" },
+              { dia: "21", mes: "Julho", diaSemana: "Terça-feira", aula: "Aula 01" },
+              { dia: "22", mes: "Julho", diaSemana: "Quarta-feira", aula: "Aula 02" },
+              { dia: "23", mes: "Julho", diaSemana: "Quinta-feira", aula: "Aula 03" },
             ].map(({ dia, mes, diaSemana, aula }) => (
               <div
                 key={`${mes}-${dia}`}

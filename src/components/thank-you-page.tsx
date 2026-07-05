@@ -20,7 +20,7 @@ export function ThankYouPage() {
     }
   }, []);
 
-  const whatsappLink = "https://chat.whatsapp.com/EzebszSzZyUDdtrQ35YwMY";
+  const whatsappLink = "https://chat.whatsapp.com/JKZdYU9NxwR9wzzNaIVamy";
 
   return (
     <div className="min-h-screen bg-background">
@@ -32,7 +32,7 @@ export function ThankYouPage() {
             🎉 <span className="text-primary">Parabéns{primeiroNome ? `, ${primeiroNome}` : ""}</span> pelo seu <span className="text-primary">cadastro!</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Você garantiu sua vaga no nosso <span className="text-primary font-semibold">Curso Gratuito!</span> O evento será nos dias <span className="text-primary font-semibold">30 de Junho, 01 e 02 de Julho.</span>
+            Você garantiu sua vaga no nosso <span className="text-primary font-semibold">Curso Gratuito!</span> O evento será nos dias <span className="text-primary font-semibold">21, 22 e 23 de Julho.</span>
           </p>
         </div>
 
