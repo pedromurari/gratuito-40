@@ -246,7 +246,7 @@ const HeroSection = () => {
             TURMA #40
           </p>
           <p className="text-lg md:text-xl font-semibold text-foreground">
-            21, 22 E 23 DE JULHO
+            14, 15 E 16 DE JULHO
           </p>
           <p className="text-md md:text-lg text-accent font-medium">
             AO VIVO NO YOUTUBE ÀS 20 HORAS
